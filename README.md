@@ -1,11 +1,11 @@
 # react-fartscroll
 
-__COMPONENT DESCRIPTION GOES HERE__
+__[Fartscroll](https://github.com/theonion/fartscroll.js) for React__
 
 
 ## Demo & Examples
 
-Live demo: [D-TUCKER.github.io/react-fartscroll](http://D-TUCKER.github.io/react-fartscroll/)
+Live demo: TODO
 
 To build the examples locally, run:
 
@@ -33,14 +33,18 @@ npm install react-fartscroll --save
 __EXPLAIN USAGE HERE__
 
 ```
-var ReactFartscroll = require('react-fartscroll');
+var FartScroll = require('react-fartscroll');
+
+or
+
+import FartScroll from 'react-fartscroll'
 
 <ReactFartscroll>Example</ReactFartscroll>
 ```
 
 ### Properties
 
-* __DOCUMENT PROPERTIES HERE__
+* __Pthhhhhhhhtt__
 
 ### Notes
 
@@ -55,7 +59,6 @@ To build, watch and serve the examples (which will also watch the component sour
 
 ## License
 
-__PUT LICENSE HERE__
+__MIT I guess__
 
 Copyright (c) 2015 Darren Tucker.
-
