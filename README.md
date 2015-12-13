@@ -5,7 +5,7 @@ __[Fartscroll](https://github.com/theonion/fartscroll.js) for React__
 
 ## Demo & Examples
 
-Live demo: TODO
+Live demo: [http://d-tucker.github.io/react-fartscroll/](http://d-tucker.github.io/react-fartscroll/)
 
 To build the examples locally, run:
 
