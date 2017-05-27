@@ -1,28 +1,21 @@
 import React from 'react';
+// import sinon from 'sinon';
 import { shallow, mount } from 'enzyme';
-import Button from '../index';
 import { expect } from 'chai';
-import sinon from 'sinon';
+import FartScroll from '../index';
+
 const { describe, it } = global;
 
-describe('Button', () => {
-  it('should show the given text', () => {
-    const text = 'The Text';
-    const wrapper = shallow(<Button>{text}</Button>);
-    expect(wrapper.text()).to.be.equal(text);
+describe('FartScroll', () => {
+  it('should render an audio element', () => {
+    const wrapper = shallow(<FartScroll />);
+    expect(wrapper.node.type).to.be.equal('audio');
   });
 
-  it('should handle the click event', () => {
-    const clickMe = sinon.stub();
-    // Here we do a JSDOM render. So, that's why we need to
-    // wrap this with a div.
-    const wrapper = mount(
-      <div>
-        <Button onClick={ clickMe }>ClickMe</Button>
-      </div>
-    );
-
-    wrapper.find('button').simulate('click');
-    expect(clickMe.callCount).to.be.equal(1);
+  it('should get props or something', () => {
+    const wrapper = mount(<FartScroll scrollFart resizeFart={false} scrollDistance={100} />);
+    expect(wrapper.node.props.scrollFart).to.be.equal(true);
+    expect(wrapper.node.props.resizeFart).to.be.equal(false);
+    expect(wrapper.node.props.scrollDistance).to.be.equal(100);
   });
 });

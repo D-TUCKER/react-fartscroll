@@ -22,16 +22,15 @@ export default class FartScroll extends React.Component {
     this.scrollFart = this.scrollFart.bind(this);
   }
 
-
   componentDidMount() {
-    this.triggerDistance = this.props.triggerDistance || 400;
-    if (this.props.scrollFart !== false) { window.addEventListener('scroll', this.scrollFart, false); }
-    if (this.props.resizeFart !== false) { window.addEventListener('resize', this.resizeFart, false); }
+    this.triggerDistance = this.props.triggerDistance;
+    if (this.props.scrollFart) { window.addEventListener('scroll', this.scrollFart, false); }
+    if (this.props.resizeFart) { window.addEventListener('resize', this.resizeFart, false); }
   }
 
   componentWillUnmount() {
-    if (this.props.scrollFart !== false) { window.removeEventListener('scroll', this.scrollFart, false); }
-    if (this.props.resizeFart !== false) { window.removeEventListener('resize', this.resizeFart, false); }
+    if (this.props.scrollFart) { window.removeEventListener('scroll', this.scrollFart, false); }
+    if (this.props.resizeFart) { window.removeEventListener('resize', this.resizeFart, false); }
   }
 
   playAudio(position) {
@@ -63,6 +62,12 @@ export default class FartScroll extends React.Component {
   }
 
 }
+
+FartScroll.defaultProps = {
+  scrollFart: true,
+  triggerDistance: 400,
+  resizeFart: true,
+};
 
 FartScroll.propTypes = {
   scrollFart: PropTypes.bool,
