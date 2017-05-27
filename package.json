@@ -37,7 +37,7 @@
     "eslint-plugin-react": "^6.3.0",
     "git-url-parse": "^6.0.1",
     "jsdom": "^9.5.0",
-    "mocha": "^3.0.2",
+    "mocha": "^3.4.2",
     "react": "^15.3.2",
     "react-addons-test-utils": "^15.3.2",
     "react-dom": "^15.3.2",
@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "babel-runtime": "^6.11.6",
-    "prop-types": "^15.5.8"
+    "prop-types": "^15.5.10"
   },
   "main": "dist/index.js",
   "engines": {
