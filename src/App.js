@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import FartScroll from './fart-scroll/FartScroll'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <FartScroll>TEST TEST 123</FartScroll>
         <a
           className="App-link"
           href="https://reactjs.org"

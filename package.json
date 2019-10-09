@@ -7,6 +7,13 @@
     "type": "git",
     "url": "https://github.com/D-TUCKER/react-fartscroll"
   },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "babel": {
+    "presets": [
+      "@babel/react"
+    ]
+  },
   "license": "MIT",
   "dependencies": {
     "react": "^16.10.2",
@@ -17,7 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "publish:npm": "NODE_ENV=production && rm -rf dist && mkdir dist && npx babel src/fart-scroll --out-dir dist --copy-files"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -33,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.3"
   }
 }
